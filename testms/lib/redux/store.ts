@@ -13,12 +13,12 @@ import {
 /* Instruments */
 import { reducer } from "./rootReducer";
 import { middleware } from "./middleware";
-import { counterSlice } from ".";
-import { gallerySlice, selectCurrPage } from "@/app/REDUX/gallerySlice";
-gallerySlice;
+
+const { galleryReducer } = reducer;
+
 export const reduxStore = configureStore({
   reducer: {
-    counter: counterReducer,
+    counter: reducer.counter,
     currPage: galleryReducer,
   },
   middleware: (getDefaultMiddleware) => {
