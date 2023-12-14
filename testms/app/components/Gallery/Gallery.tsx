@@ -1,6 +1,6 @@
-import { selectCurrPage, decrement, increment } from "./gallerySlice";
+import { selectCurrPage, decrement, increment } from "../../REDUX/gallerySlice";
 import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "./store"; // Import the RootState type
+import { RootState } from "../../../lib/redux/store"; // Import the RootState type
 
 export function Gallery() {
   // Use RootState for the state type in useSelector
